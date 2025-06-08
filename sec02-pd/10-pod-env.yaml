@@ -1,0 +1,17 @@
+# Command is ENTRYPOINT in docker (is to override entrypoint)
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+spec:
+  restartPolicy: Never # Always, Never, OnFailure
+  containers:
+    - name: ubuntu
+      image: ubuntu
+      env:
+        - name: "request.timeout"
+          value: "10ms"
+        - name: "spring.profiles.active"
+          value: "dev"
+      args:
+        - "env" #this command to print env

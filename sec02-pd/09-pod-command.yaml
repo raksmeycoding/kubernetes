@@ -1,0 +1,14 @@
+# Command is ENTRYPOINT in docker (is to override entrypoint)
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+spec:
+  restartPolicy: Never # Always, Never, OnFailure
+  terminationGracePeriodSeconds: 1
+  containers:
+    - name: ubuntu
+      image: ubuntu
+      args:
+        - "sleep"
+        - "3600"
