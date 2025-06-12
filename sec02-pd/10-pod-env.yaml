@@ -14,4 +14,4 @@ spec:
         - name: "spring.profiles.active"
           value: "dev"
       args:
-        - "env" #this command to print env
+        - "env" #this command.md to print env

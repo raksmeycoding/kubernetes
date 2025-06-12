@@ -41,3 +41,5 @@ In Kubernetes, the `--dry-run=client` flag is used with `kubectl` commands to **
 
 ```bash
 kubectl apply -f my-pod.yaml --dry-run=client -o yaml > my-pod-preview.yaml
+kubectl create deployment myapp --image=nginx -o yaml --dry-run=client > deployment.yaml
+```
