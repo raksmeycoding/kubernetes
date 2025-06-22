@@ -169,6 +169,8 @@ Then `exec` into a pod in one namespace and curl the **service IP** of the other
 kubectl exec -n ns1 -it <POD_NAME> -- /bin/sh
 # Inside:
 curl <CLUSTER_IP_OF_svc-ns2>
+kubectl exec -n ns1 -it deployment-ns1-5b5df85c44-5gm4b -- sh
+curl 10.244.1.4 # other pod in another namespace
 ```
 
 ✅ You should get a response.

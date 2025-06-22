@@ -7,6 +7,7 @@ kubectl get pods --all-namespaces
 
 # will list pods in my-namespace
 kubectl get pods --namespace=my-namespace
+kubectl get pods -n=ns1
 
 # get deployment in specific namespace
 kubectl get deployment -n ns1
