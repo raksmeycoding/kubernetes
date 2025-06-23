@@ -2,8 +2,11 @@
 
 ## Check out the video below for Day11 👇
 
-[![Day11/40 - Multi Container Pod Kubernetes - Sidecar vs Init Container](https://img.youtube.com/vi/yRiFq1ykBxc/sddefault.jpg)](https://youtu.be/yRiFq1ykBxc)
+[![Day11/40 - Multi Container Pod Kubernetes - Sidecar vs Init Container](https://img.youtube.com/vi/yRiFq1ykBxc/sddefault.jpgg)](https://youtu.be/yRiFq1ykBxc)
 
+What is the use of init container?
+
+The init containers option is available in Kubernetes environments used to run additional containers at startup that helps initialize an application. Once the init containers have completed their initialization tasks, they terminate but leave the application container(s) running.
 
 ## Sample YAML used in the demo
 
